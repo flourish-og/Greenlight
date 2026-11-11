@@ -1,0 +1,10 @@
+# Kane recordings are content-addressed by an md5 of each step's text.
+# Any line-ending rewrite on checkout invalidates them and forces a paid
+# re-authoring run, so everything textual is stored as LF.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.evidence binary
+*.har binary

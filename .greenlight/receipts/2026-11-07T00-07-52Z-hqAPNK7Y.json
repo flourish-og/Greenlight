@@ -1,0 +1,140 @@
+{
+  "v": 1,
+  "loopID": "gl-mw5n8ehq-APNK7Y",
+  "sessionID": "ses_e4d119e85ffdWRsvA2MUAPNK7Y",
+  "objective": "Phase 2 demo: promo codes were just implemented; Kane decides whether they actually reach the paid total.",
+  "trigger": {
+    "kind": "tool",
+    "files": [],
+    "reason": "Phase 2 demo: promo codes were just implemented; Kane decides whether they actually reach the paid total."
+  },
+  "startedAt": "2026-11-07T00:07:52.328Z",
+  "outcome": "red",
+  "attempts": [
+    {
+      "n": 1,
+      "kind": "suite",
+      "command": [
+        "node",
+        "C:\\Users\\flour\\AppData\\Roaming\\npm\\node_modules\\@testmuai\\kane-cli\\bin\\kane-cli.cjs",
+        "testrun",
+        "run",
+        "--match",
+        "^flows[/\\\\]store[/\\\\]",
+        "--agent",
+        "--headless",
+        "--no-adaptive-heal"
+      ],
+      "exitCode": 1,
+      "status": "failed",
+      "durationS": 390.7,
+      "credits": 71.32,
+      "steps": {
+        "total": 14,
+        "passed": 13,
+        "failed": 1,
+        "skipped": 0,
+        "replayed": 11,
+        "authored": 3
+      },
+      "members": [
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\cart_test.md",
+          "name": "cart_test.md",
+          "status": "passed",
+          "durationS": 19,
+          "sessionID": "97ff538a-f6eb-4383-a483-f1786128b402",
+          "logPath": "C:\\Users\\flour\\Desktop\\greenlight\\tests\\fixtures\\kane\\phase2-member-cart-2026-11-07.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "cart_subtotal": "$84.00",
+            "cart_only_aurora_desk_lamp": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\catalog_test.md",
+          "name": "catalog_test.md",
+          "status": "passed",
+          "durationS": 33,
+          "sessionID": "4ac6ccb9-e55a-44fc-9c5f-cfec5c850f2c",
+          "logPath": "C:\\Users\\flour\\Desktop\\greenlight\\tests\\fixtures\\kane\\phase2-member-catalog-2026-11-07.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "detail_page_price_check": "$24.00",
+            "add_to_cart_button_visible": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\checkout_test.md",
+          "name": "checkout_test.md",
+          "status": "passed",
+          "durationS": 42,
+          "sessionID": "35e83811-c99c-441c-aece-aad12961b36c",
+          "logPath": "C:\\Users\\flour\\Desktop\\greenlight\\tests\\fixtures\\kane\\phase2-member-checkout-2026-11-07.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "order_confirmed_message": "true",
+            "order_number_gl_prefix": "GL-",
+            "thank_you_ada_lovelace_message": "true"
+          }
+        },
+        {
+          "path": "flows\\store\\promo_test.md",
+          "name": "promo_test.md",
+          "status": "failed",
+          "durationS": 227,
+          "sessionID": "0b4b8d74-9fdf-4afb-912d-a5ab5dd1cf10",
+          "logPath": "C:\\Users\\flour\\Desktop\\greenlight\\tests\\fixtures\\kane\\phase2-member-promo-2026-11-07.ndjson",
+          "authored": true,
+          "failure": {
+            "message": "Final verification failed: \"the confirmation page shows \"Total paid: $37.80\"\"",
+            "stepIndex": 3
+          },
+          "failedStep": 3
+        }
+      ],
+      "verdict": {
+        "family": "application_issue",
+        "category": "ui_data_defect",
+        "severity": "major",
+        "bugTitle": "Confirmation total omits applied promo discount",
+        "rootCause": "The discount shown in the cart and checkout was not carried through to the final confirmation total.",
+        "oneLiner": "The order confirmation charged $42.00 even though the checkout total was $37.80.",
+        "suggestion": "Investigate the order-total calculation used after placing an order and ensure an applied promo discount is preserved on the confirmation page.",
+        "confidence": 0.98,
+        "culpritStep": "2-12"
+      },
+      "evidence": [
+        "C:\\Users\\flour\\Desktop\\greenlight\\.testmuai\\evidence\\e1133c75-9167-41da-a121-088e0cbdb827.evidence",
+        "C:\\Users\\flour\\Desktop\\greenlight\\.testmuai\\evidence\\e1133c75-9167-41da-a121-088e0cbdb827.evidence"
+      ],
+      "summary": "The order confirmation charged $42.00 even though the checkout total was $37.80.",
+      "startedAt": "2026-11-07T00:07:52.359Z",
+      "endedAt": "2026-11-07T00:14:23.084Z",
+      "stream": "tests/fixtures/kane/phase2-testrun-2026-11-07.ndjson"
+    }
+  ],
+  "totals": {
+    "credits": 71.32,
+    "durationS": 390.7,
+    "authored": 3,
+    "replayed": 11,
+    "passed": 13,
+    "failed": 1
+  },
+  "integrity": {
+    "ok": true,
+    "checked": 14,
+    "changed": []
+  },
+  "target": {
+    "url": "http://localhost:5173",
+    "reachable": true,
+    "startedByPlugin": false
+  },
+  "notes": [],
+  "endedAt": "2026-11-07T00:14:23.087Z"
+}

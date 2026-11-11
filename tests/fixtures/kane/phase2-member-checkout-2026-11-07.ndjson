@@ -1,0 +1,134 @@
+{"type":"test_md_step_start","step_index":1,"heading":"Start checkout","ref":null,"v":1,"ts":"2026-11-07T00:09:20.220Z"}
+{"type":"run_start","objective":"Go to http://localhost:5173, add the Halo Task Light to the cart, click the Cart button, click Checkout and verify the checkout page shows the heading \"Checkout\" and an order total of $24.00.","timestamp":1794010160,"environment":{"resolution":"1920x1080"},"v":1,"ts":"2026-11-07T00:09:20.281Z"}
+{"type":"step_event","index":0,"event":"replay_started","detail":"replaying 8 actions","recording_length":8,"v":1,"ts":"2026-11-07T00:09:20.283Z"}
+{"type":"step_start","index":1,"objective":"Step 1","v":1,"ts":"2026-11-07T00:09:20.284Z"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"chrome://new-tab-page/","v":1,"ts":"2026-11-07T00:09:20.437Z"}
+{"type":"step_event","index":1,"event":"action","detail":"Navigate to http://localhost:5173","action_type":"navigate","success":true,"v":1,"ts":"2026-11-07T00:09:20.809Z"}
+{"type":"step_event","index":1,"event":"reasoning","detail":"Navigate to http://localhost:5173","action_type":"navigate","v":1,"ts":"2026-11-07T00:09:20.810Z"}
+{"type":"step_end","index":1,"status":"passed","duration":0.5,"summary":"navigate: Navigate to http://localhost:5173","ordinal":1,"id":"0-1","kind":"navigate","screenshot":"screenshot.jpg","action_id":"39498564-0cd8-4e61-9b59-5a474f789fb5","v":1,"ts":"2026-11-07T00:09:20.818Z"}
+{"type":"step_start","index":2,"objective":"Step 2","v":1,"ts":"2026-11-07T00:09:20.819Z"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:21.195Z"}
+{"type":"step_event","index":2,"event":"action","detail":"Clicking Add the Halo Task Light to the cart","action_type":"click","success":true,"v":1,"ts":"2026-11-07T00:09:21.915Z"}
+{"type":"step_event","index":2,"event":"reasoning","detail":"Clicking Add the Halo Task Light to the cart","action_type":"click","v":1,"ts":"2026-11-07T00:09:21.915Z"}
+{"type":"step_end","index":2,"status":"passed","duration":1.1,"summary":"click: Clicking Add the Halo Task Light to the cart","ordinal":2,"id":"0-2","kind":"click","screenshot":"screenshot.jpg","action_id":"d0a4d89e-8bea-41d2-b7a3-2ac64cfe45df","v":1,"ts":"2026-11-07T00:09:22.018Z"}
+{"type":"step_start","index":3,"objective":"Step 3","v":1,"ts":"2026-11-07T00:09:22.019Z"}
+{"type":"step_event","index":3,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:22.126Z"}
+{"type":"step_event","index":3,"event":"action","detail":"Clicking the Cart button","action_type":"click","success":true,"v":1,"ts":"2026-11-07T00:09:22.827Z"}
+{"type":"step_event","index":3,"event":"reasoning","detail":"Clicking the Cart button","action_type":"click","v":1,"ts":"2026-11-07T00:09:22.827Z"}
+{"type":"step_end","index":3,"status":"passed","duration":0.8,"summary":"click: Clicking the Cart button","ordinal":3,"id":"0-3","kind":"click","screenshot":"screenshot.jpg","action_id":"048783dc-c1d2-4b04-bd96-8413ac190d8e","v":1,"ts":"2026-11-07T00:09:22.929Z"}
+{"type":"step_start","index":4,"objective":"Step 4","v":1,"ts":"2026-11-07T00:09:22.930Z"}
+{"type":"step_event","index":4,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:23.038Z"}
+{"type":"step_event","index":4,"event":"action","detail":"Clicking Checkout","action_type":"click","success":true,"v":1,"ts":"2026-11-07T00:09:23.663Z"}
+{"type":"step_event","index":4,"event":"reasoning","detail":"Clicking Checkout","action_type":"click","v":1,"ts":"2026-11-07T00:09:23.664Z"}
+{"type":"step_end","index":4,"status":"passed","duration":0.7,"summary":"click: Clicking Checkout","ordinal":4,"id":"0-4","kind":"click","screenshot":"screenshot.jpg","action_id":"f4689945-f2d2-413b-9edf-9784adec5299","v":1,"ts":"2026-11-07T00:09:23.724Z"}
+{"type":"step_start","index":5,"objective":"Step 5","v":1,"ts":"2026-11-07T00:09:23.725Z"}
+{"type":"step_event","index":5,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:23.814Z"}
+{"type":"step_event","index":5,"event":"action","detail":"Waiting for the Checkout heading to become visible","action_type":"wait","success":true,"v":1,"ts":"2026-11-07T00:09:31.496Z"}
+{"type":"step_event","index":5,"event":"reasoning","detail":"Waiting for the Checkout heading to become visible","action_type":"wait","v":1,"ts":"2026-11-07T00:09:31.497Z"}
+{"type":"step_end","index":5,"status":"passed","duration":7.8,"summary":"wait: Waiting for the Checkout heading to become visible","ordinal":5,"id":"0-5","kind":"wait","screenshot":"screenshot.jpg","action_id":"0acbea40-ac6a-4fc3-b6b8-36fd1c15222a","v":1,"ts":"2026-11-07T00:09:31.501Z"}
+{"type":"step_start","index":6,"objective":"Step 6","v":1,"ts":"2026-11-07T00:09:31.501Z"}
+{"type":"step_event","index":6,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:31.597Z"}
+{"type":"step_event","index":6,"event":"action","detail":"Checking whether the checkout page heading is present","action_type":"analyze","success":true,"v":1,"ts":"2026-11-07T00:09:31.646Z"}
+{"type":"step_event","index":6,"event":"reasoning","detail":"Checking whether the checkout page heading is present","action_type":"analyze","v":1,"ts":"2026-11-07T00:09:31.647Z"}
+{"type":"step_end","index":6,"status":"passed","duration":0.1,"summary":"analyze: Checking whether the checkout page heading is present","ordinal":6,"id":"0-6","kind":"analyze","screenshot":"screenshot.jpg","action_id":"aaa9affd-36a8-426e-95a0-dbba2fa13531","v":1,"ts":"2026-11-07T00:09:31.651Z"}
+{"type":"step_start","index":7,"objective":"Step 7","v":1,"ts":"2026-11-07T00:09:31.652Z"}
+{"type":"step_event","index":7,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:31.753Z"}
+{"type":"step_event","index":7,"event":"action","detail":"Reading the order total from the checkout page","action_type":"analyze","success":true,"v":1,"ts":"2026-11-07T00:09:31.797Z"}
+{"type":"step_event","index":7,"event":"reasoning","detail":"Reading the order total from the checkout page","action_type":"analyze","v":1,"ts":"2026-11-07T00:09:31.797Z"}
+{"type":"step_end","index":7,"status":"passed","duration":0.2,"summary":"analyze: Reading the order total from the checkout page","ordinal":7,"id":"0-7","kind":"analyze","screenshot":"screenshot.jpg","action_id":"31dc6cd7-78b1-4e77-9c28-5a24ad3fef2f","v":1,"ts":"2026-11-07T00:09:31.801Z"}
+{"type":"step_start","index":8,"objective":"Step 8","v":1,"ts":"2026-11-07T00:09:31.802Z"}
+{"type":"step_event","index":8,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:31.902Z"}
+{"type":"step_event","index":8,"event":"assertion","detail":"the checkout page shows the heading \"Checkout\" and an order total of $24.00","passed":true,"v":1,"ts":"2026-11-07T00:09:31.908Z"}
+{"type":"step_end","index":8,"status":"passed","duration":0.1,"summary":"assert: the checkout page shows the heading \"Checkout\" and an order total of $24.00","ordinal":8,"id":"0-8","kind":"assert","screenshot":"screenshot.jpg","action_id":"5da386d4-f27c-4917-905d-dc89bb56e6e8","v":1,"ts":"2026-11-07T00:09:31.914Z"}
+{"type":"run_end","run_id":"run-0","status":"passed","summary":"","reason":"replay completed","duration":11.67,"final_url":"http://localhost:5173/","actions_executed":8,"screenshot_path":"C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\35e83811-c99c-441c-aece-aad12961b36c\\scratch\\0\\replay-test\\screenshots/step_008.png","run_dir":"C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\35e83811-c99c-441c-aece-aad12961b36c\\scratch\\0\\replay-test","total_runs":1,"context":{"memory":{},"variables":{"checkout_heading_visible":{"syntax":"{{checkout_heading_visible}}","value":"true","secret":false},"checkout_order_total":{"syntax":"{{checkout_order_total}}","value":"$24.00","secret":false}},"pointer":""},"variables_out":{"checkout_heading_visible":{"syntax":"{{checkout_heading_visible}}","value":"true","secret":false},"checkout_order_total":{"syntax":"{{checkout_order_total}}","value":"$24.00","secret":false}},"store_out":{},"result_code":100,"reason_code":"success.complete","v":1,"ts":"2026-11-07T00:09:31.943Z"}
+{"type":"test_md_step_end","step_index":1,"status":"passed","duration_s":11.67,"ref_kind":null,"unit_kind":null,"inlined_count":null,"failed_sub_step_index":null,"v":1,"ts":"2026-11-07T00:09:31.944Z"}
+{"type":"test_md_step_start","step_index":2,"heading":"Reject an empty form","ref":null,"v":1,"ts":"2026-11-07T00:09:31.945Z"}
+{"type":"run_start","objective":"Click Place order without filling in any field and verify the error message \"Full name is required\" is visible.","timestamp":1794010171,"environment":{"resolution":"1920x1080"},"v":1,"ts":"2026-11-07T00:09:31.959Z"}
+{"type":"step_event","index":0,"event":"replay_started","detail":"replaying 3 actions","recording_length":3,"v":1,"ts":"2026-11-07T00:09:31.962Z"}
+{"type":"step_start","index":1,"objective":"Step 1","v":1,"ts":"2026-11-07T00:09:31.982Z"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:32.101Z"}
+{"type":"step_event","index":1,"event":"action","detail":"Clicking Place order button in checkout form","action_type":"click","success":true,"v":1,"ts":"2026-11-07T00:09:32.739Z"}
+{"type":"step_event","index":1,"event":"reasoning","detail":"Clicking Place order button in checkout form","action_type":"click","v":1,"ts":"2026-11-07T00:09:32.741Z"}
+{"type":"step_end","index":1,"status":"passed","duration":0.8,"summary":"click: Clicking Place order button in checkout form","ordinal":9,"id":"1-1","kind":"click","screenshot":"screenshot.jpg","action_id":"f65735a2-323c-4c6a-9893-1016779e41ad","v":1,"ts":"2026-11-07T00:09:32.964Z"}
+{"type":"step_start","index":2,"objective":"Step 2","v":1,"ts":"2026-11-07T00:09:32.965Z"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:33.098Z"}
+{"type":"step_event","index":2,"event":"action","detail":"Checking whether the full-name required error is visible","action_type":"analyze","success":true,"v":1,"ts":"2026-11-07T00:09:33.167Z"}
+{"type":"step_event","index":2,"event":"reasoning","detail":"Checking whether the full-name required error is visible","action_type":"analyze","v":1,"ts":"2026-11-07T00:09:33.167Z"}
+{"type":"step_end","index":2,"status":"passed","duration":0.2,"summary":"analyze: Checking whether the full-name required error is visible","ordinal":10,"id":"1-2","kind":"analyze","screenshot":"screenshot.jpg","action_id":"488f9092-4781-4647-88b8-1aefb4a37438","v":1,"ts":"2026-11-07T00:09:33.177Z"}
+{"type":"step_start","index":3,"objective":"Step 3","v":1,"ts":"2026-11-07T00:09:33.178Z"}
+{"type":"step_event","index":3,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:33.290Z"}
+{"type":"step_event","index":3,"event":"assertion","detail":"the error message \"Full name is required\" is visible","passed":true,"v":1,"ts":"2026-11-07T00:09:33.299Z"}
+{"type":"step_end","index":3,"status":"passed","duration":0.1,"summary":"assert: the error message \"Full name is required\" is visible","ordinal":11,"id":"1-3","kind":"assert","screenshot":"screenshot.jpg","action_id":"001a2524-57fa-47bf-a6ef-c13e8597e5c4","v":1,"ts":"2026-11-07T00:09:33.304Z"}
+{"type":"run_end","run_id":"run-1","status":"passed","summary":"","reason":"replay completed","duration":1.39,"final_url":"http://localhost:5173/","actions_executed":3,"screenshot_path":"C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\35e83811-c99c-441c-aece-aad12961b36c\\scratch\\1\\replay-test\\screenshots/step_003.png","run_dir":"C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\35e83811-c99c-441c-aece-aad12961b36c\\scratch\\1\\replay-test","total_runs":1,"context":{"memory":{},"variables":{"full_name_required_error_visible":{"syntax":"{{full_name_required_error_visible}}","value":"true","secret":false}},"pointer":""},"variables_out":{"full_name_required_error_visible":{"syntax":"{{full_name_required_error_visible}}","value":"true","secret":false}},"store_out":{},"result_code":100,"reason_code":"success.complete","v":1,"ts":"2026-11-07T00:09:33.331Z"}
+{"type":"test_md_step_end","step_index":2,"status":"passed","duration_s":1.39,"ref_kind":null,"unit_kind":null,"inlined_count":null,"failed_sub_step_index":null,"v":1,"ts":"2026-11-07T00:09:33.331Z"}
+{"type":"test_md_step_start","step_index":3,"heading":"Place the order","ref":null,"v":1,"ts":"2026-11-07T00:09:33.332Z"}
+{"type":"run_start","objective":"Fill in Full name with \"Ada Lovelace\", Email with \"ada@example.com\", Address with \"12 Analytical Way\", City with \"London\" and Postal code with \"N1 9GU\", then click Place order and verify the confirmation page shows \"Order confirmed\", \"Thank you, Ada Lovelace.\" and an order number that starts with GL-.","timestamp":1794010173,"environment":{"resolution":"1920x1080"},"v":1,"ts":"2026-11-07T00:09:33.346Z"}
+{"type":"step_event","index":0,"event":"replay_started","detail":"replaying 13 actions","recording_length":13,"v":1,"ts":"2026-11-07T00:09:33.349Z"}
+{"type":"step_start","index":1,"objective":"Step 1","v":1,"ts":"2026-11-07T00:09:33.366Z"}
+{"type":"step_event","index":1,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:33.482Z"}
+{"type":"step_event","index":1,"event":"action","detail":"Waiting while the form fields finish processing","action_type":"wait","success":true,"v":1,"ts":"2026-11-07T00:09:34.509Z"}
+{"type":"step_event","index":1,"event":"reasoning","detail":"Waiting while the form fields finish processing","action_type":"wait","v":1,"ts":"2026-11-07T00:09:34.510Z"}
+{"type":"step_end","index":1,"status":"passed","duration":1.1,"summary":"wait: Waiting while the form fields finish processing","ordinal":12,"id":"2-1","kind":"wait","screenshot":"screenshot.jpg","action_id":"f3420904-1e94-47b4-a3c1-c23b32d47110","v":1,"ts":"2026-11-07T00:09:34.514Z"}
+{"type":"step_start","index":2,"objective":"Step 2","v":1,"ts":"2026-11-07T00:09:34.515Z"}
+{"type":"step_event","index":2,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:34.618Z"}
+{"type":"step_event","index":2,"event":"action","detail":"Type \"Ada Lovelace\" into \"Full name\"","action_type":"fill","success":true,"v":1,"ts":"2026-11-07T00:09:34.822Z"}
+{"type":"step_event","index":2,"event":"reasoning","detail":"Type \"Ada Lovelace\" into \"Full name\"","action_type":"fill","v":1,"ts":"2026-11-07T00:09:34.823Z"}
+{"type":"step_end","index":2,"status":"passed","duration":0.3,"summary":"fill: Type \"Ada Lovelace\" into \"Full name\"","ordinal":13,"id":"2-2","kind":"fill","screenshot":"screenshot.jpg","action_id":"8bcdb23d-3152-4d24-80e0-cc5e1b2fa5d0","v":1,"ts":"2026-11-07T00:09:34.897Z"}
+{"type":"step_start","index":3,"objective":"Step 3","v":1,"ts":"2026-11-07T00:09:34.898Z"}
+{"type":"step_event","index":3,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:35.011Z"}
+{"type":"step_event","index":3,"event":"action","detail":"Typing email address into checkout form","action_type":"fill","success":true,"v":1,"ts":"2026-11-07T00:09:35.370Z"}
+{"type":"step_event","index":3,"event":"reasoning","detail":"Typing email address into checkout form","action_type":"fill","v":1,"ts":"2026-11-07T00:09:35.371Z"}
+{"type":"step_end","index":3,"status":"passed","duration":0.5,"summary":"fill: Typing email address into checkout form","ordinal":14,"id":"2-3","kind":"fill","screenshot":"screenshot.jpg","action_id":"b537f04c-231b-4cf0-93ff-102c024b4dcc","v":1,"ts":"2026-11-07T00:09:35.466Z"}
+{"type":"step_start","index":4,"objective":"Step 4","v":1,"ts":"2026-11-07T00:09:35.467Z"}
+{"type":"step_event","index":4,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:35.582Z"}
+{"type":"step_event","index":4,"event":"action","detail":"Entering address 12 Analytical Way","action_type":"fill","success":true,"v":1,"ts":"2026-11-07T00:09:35.777Z"}
+{"type":"step_event","index":4,"event":"reasoning","detail":"Entering address 12 Analytical Way","action_type":"fill","v":1,"ts":"2026-11-07T00:09:35.778Z"}
+{"type":"step_end","index":4,"status":"passed","duration":0.3,"summary":"fill: Entering address 12 Analytical Way","ordinal":15,"id":"2-4","kind":"fill","screenshot":"screenshot.jpg","action_id":"77088a18-b534-483c-a9e8-d307ce7deda5","v":1,"ts":"2026-11-07T00:09:35.864Z"}
+{"type":"step_start","index":5,"objective":"Step 5","v":1,"ts":"2026-11-07T00:09:35.865Z"}
+{"type":"step_event","index":5,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:35.979Z"}
+{"type":"step_event","index":5,"event":"action","detail":"Entering London in City field","action_type":"fill","success":true,"v":1,"ts":"2026-11-07T00:09:36.184Z"}
+{"type":"step_event","index":5,"event":"reasoning","detail":"Entering London in City field","action_type":"fill","v":1,"ts":"2026-11-07T00:09:36.184Z"}
+{"type":"step_end","index":5,"status":"passed","duration":0.3,"summary":"fill: Entering London in City field","ordinal":16,"id":"2-5","kind":"fill","screenshot":"screenshot.jpg","action_id":"5e5f5c2c-250c-48d0-9bb1-3de7b859597c","v":1,"ts":"2026-11-07T00:09:36.264Z"}
+{"type":"step_start","index":6,"objective":"Step 6","v":1,"ts":"2026-11-07T00:09:36.265Z"}
+{"type":"step_event","index":6,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:36.379Z"}
+{"type":"step_event","index":6,"event":"action","detail":"Typing postal code N1 9GU","action_type":"fill","success":true,"v":1,"ts":"2026-11-07T00:09:36.563Z"}
+{"type":"step_event","index":6,"event":"reasoning","detail":"Typing postal code N1 9GU","action_type":"fill","v":1,"ts":"2026-11-07T00:09:36.563Z"}
+{"type":"step_end","index":6,"status":"passed","duration":0.3,"summary":"fill: Typing postal code N1 9GU","ordinal":17,"id":"2-6","kind":"fill","screenshot":"screenshot.jpg","action_id":"c6512745-ad4d-4c11-bda6-390804bb0858","v":1,"ts":"2026-11-07T00:09:36.639Z"}
+{"type":"step_start","index":7,"objective":"Step 7","v":1,"ts":"2026-11-07T00:09:36.640Z"}
+{"type":"step_event","index":7,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:36.741Z"}
+{"type":"step_event","index":7,"event":"action","detail":"Waiting for confirming completed order form entries","action_type":"wait","success":true,"v":1,"ts":"2026-11-07T00:09:37.249Z"}
+{"type":"step_event","index":7,"event":"reasoning","detail":"Waiting for confirming completed order form entries","action_type":"wait","v":1,"ts":"2026-11-07T00:09:37.249Z"}
+{"type":"step_end","index":7,"status":"passed","duration":0.6,"summary":"wait: Waiting for confirming completed order form entries","ordinal":18,"id":"2-7","kind":"wait","screenshot":"screenshot.jpg","action_id":"a89b6116-ad1e-4a15-8919-bf60fbdf788d","v":1,"ts":"2026-11-07T00:09:37.253Z"}
+{"type":"step_start","index":8,"objective":"Step 8","v":1,"ts":"2026-11-07T00:09:37.254Z"}
+{"type":"step_event","index":8,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:37.358Z"}
+{"type":"step_event","index":8,"event":"action","detail":"Clicking Place order","action_type":"click","success":true,"v":1,"ts":"2026-11-07T00:09:38.006Z"}
+{"type":"step_event","index":8,"event":"reasoning","detail":"Clicking Place order","action_type":"click","v":1,"ts":"2026-11-07T00:09:38.006Z"}
+{"type":"step_end","index":8,"status":"passed","duration":0.8,"summary":"click: Clicking Place order","ordinal":19,"id":"2-8","kind":"click","screenshot":"screenshot.jpg","action_id":"80c337cf-b8b7-4620-95bc-28ecc95d9806","v":1,"ts":"2026-11-07T00:09:38.095Z"}
+{"type":"step_start","index":9,"objective":"Step 9","v":1,"ts":"2026-11-07T00:09:38.096Z"}
+{"type":"step_event","index":9,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:38.178Z"}
+{"type":"step_event","index":9,"event":"action","detail":"Waiting for the order confirmation page to load","action_type":"wait","success":true,"v":1,"ts":"2026-11-07T00:09:50.574Z"}
+{"type":"step_event","index":9,"event":"reasoning","detail":"Waiting for the order confirmation page to load","action_type":"wait","v":1,"ts":"2026-11-07T00:09:50.575Z"}
+{"type":"step_end","index":9,"status":"passed","duration":12.5,"summary":"wait: Waiting for the order confirmation page to load","ordinal":20,"id":"2-9","kind":"wait","screenshot":"screenshot.jpg","action_id":"0a6feefc-7861-4151-b79f-635e7523c37d","v":1,"ts":"2026-11-07T00:09:50.579Z"}
+{"type":"step_start","index":10,"objective":"Step 10","v":1,"ts":"2026-11-07T00:09:50.580Z"}
+{"type":"step_event","index":10,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:50.665Z"}
+{"type":"step_event","index":10,"event":"action","detail":"Checking whether the order confirmation message is present","action_type":"analyze","success":true,"v":1,"ts":"2026-11-07T00:09:50.720Z"}
+{"type":"step_event","index":10,"event":"reasoning","detail":"Checking whether the order confirmation message is present","action_type":"analyze","v":1,"ts":"2026-11-07T00:09:50.721Z"}
+{"type":"step_end","index":10,"status":"passed","duration":0.1,"summary":"analyze: Checking whether the order confirmation message is present","ordinal":21,"id":"2-10","kind":"analyze","screenshot":"screenshot.jpg","action_id":"59f94b35-0356-4e0b-acb7-746db9c21190","v":1,"ts":"2026-11-07T00:09:50.726Z"}
+{"type":"step_start","index":11,"objective":"Step 11","v":1,"ts":"2026-11-07T00:09:50.727Z"}
+{"type":"step_event","index":11,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:50.815Z"}
+{"type":"step_event","index":11,"event":"action","detail":"Reading the order number prefix from the confirmation details","action_type":"analyze","success":true,"v":1,"ts":"2026-11-07T00:09:50.866Z"}
+{"type":"step_event","index":11,"event":"reasoning","detail":"Reading the order number prefix from the confirmation details","action_type":"analyze","v":1,"ts":"2026-11-07T00:09:50.866Z"}
+{"type":"step_end","index":11,"status":"passed","duration":0.1,"summary":"analyze: Reading the order number prefix from the confirmation details","ordinal":22,"id":"2-11","kind":"analyze","screenshot":"screenshot.jpg","action_id":"140cf431-8014-4cfa-80d0-93bd6867bf03","v":1,"ts":"2026-11-07T00:09:50.872Z"}
+{"type":"step_start","index":12,"objective":"Step 12","v":1,"ts":"2026-11-07T00:09:50.873Z"}
+{"type":"step_event","index":12,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:50.947Z"}
+{"type":"step_event","index":12,"event":"action","detail":"Checking whether the thank-you message is present","action_type":"analyze","success":true,"v":1,"ts":"2026-11-07T00:09:50.993Z"}
+{"type":"step_event","index":12,"event":"reasoning","detail":"Checking whether the thank-you message is present","action_type":"analyze","v":1,"ts":"2026-11-07T00:09:50.993Z"}
+{"type":"step_end","index":12,"status":"passed","duration":0.1,"summary":"analyze: Checking whether the thank-you message is present","ordinal":23,"id":"2-12","kind":"analyze","screenshot":"screenshot.jpg","action_id":"1ccaef9b-845e-4b9c-93f0-2c6c7773a11d","v":1,"ts":"2026-11-07T00:09:50.998Z"}
+{"type":"step_start","index":13,"objective":"Step 13","v":1,"ts":"2026-11-07T00:09:50.998Z"}
+{"type":"step_event","index":13,"event":"screenshot","detail":"http://localhost:5173/","v":1,"ts":"2026-11-07T00:09:51.084Z"}
+{"type":"step_event","index":13,"event":"assertion","detail":"the confirmation page shows \"Order confirmed\", \"Thank you, Ada Lovelace.\" and an order number that starts with GL-.","passed":true,"v":1,"ts":"2026-11-07T00:09:51.089Z"}
+{"type":"step_end","index":13,"status":"passed","duration":0.1,"summary":"assert: the confirmation page shows \"Order confirmed\", \"Thank you, Ada Lovelace.\" and an","ordinal":24,"id":"2-13","kind":"assert","screenshot":"screenshot.jpg","action_id":"1056b342-70fc-483b-bc6d-bafaa80a3a7f","v":1,"ts":"2026-11-07T00:09:51.096Z"}
+{"type":"run_end","run_id":"run-2","status":"passed","summary":"","reason":"replay completed","duration":17.78,"final_url":"http://localhost:5173/","actions_executed":13,"screenshot_path":"C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\35e83811-c99c-441c-aece-aad12961b36c\\scratch\\2\\replay-test\\screenshots/step_013.png","run_dir":"C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\35e83811-c99c-441c-aece-aad12961b36c\\scratch\\2\\replay-test","total_runs":1,"context":{"memory":{},"variables":{"order_confirmed_message":{"syntax":"{{order_confirmed_message}}","value":"true","secret":false},"order_number_gl_prefix":{"syntax":"{{order_number_gl_prefix}}","value":"GL-","secret":false},"thank_you_ada_lovelace_message":{"syntax":"{{thank_you_ada_lovelace_message}}","value":"true","secret":false}},"pointer":""},"variables_out":{"order_confirmed_message":{"syntax":"{{order_confirmed_message}}","value":"true","secret":false},"order_number_gl_prefix":{"syntax":"{{order_number_gl_prefix}}","value":"GL-","secret":false},"thank_you_ada_lovelace_message":{"syntax":"{{thank_you_ada_lovelace_message}}","value":"true","secret":false}},"store_out":{},"result_code":100,"reason_code":"success.complete","v":1,"ts":"2026-11-07T00:09:51.117Z"}
+{"type":"test_md_step_end","step_index":3,"status":"passed","duration_s":17.78,"ref_kind":null,"unit_kind":null,"inlined_count":null,"failed_sub_step_index":null,"v":1,"ts":"2026-11-07T00:09:51.118Z"}
+{"type":"test_md_summary","overall_status":"passed","duration_s":42,"steps":{"total":3,"passed":3,"failed":0,"skipped":0,"replay_decisions":3,"author_decisions":0},"adaptive_heal":{"triggered":false},"commit":{"committed":false,"reason":"readonly_fallback"},"artifacts":{"replaced":false},"upload":{"performed":true,"succeeded":true},"cancelled":false,"v":1,"ts":"2026-11-07T00:10:09.754Z"}
+{"type":"test_md_done","overall_status":"passed","duration_s":42,"session_id":"35e83811-c99c-441c-aece-aad12961b36c","v":1,"ts":"2026-11-07T00:10:09.755Z"}

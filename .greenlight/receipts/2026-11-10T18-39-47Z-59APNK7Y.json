@@ -1,0 +1,155 @@
+{
+  "v": 1,
+  "loopID": "gl-mwb1bh59-APNK7Y",
+  "sessionID": "ses_e4d119e85ffdWRsvA2MUAPNK7Y",
+  "objective": "Shipping + gift wrap landed through the loop; verify the full 6-flow store suite is green.",
+  "trigger": {
+    "kind": "tool",
+    "files": [],
+    "reason": "Shipping + gift wrap landed through the loop; verify the full 6-flow store suite is green."
+  },
+  "startedAt": "2026-11-10T18:39:47.854Z",
+  "outcome": "green",
+  "attempts": [
+    {
+      "n": 1,
+      "kind": "suite",
+      "command": [
+        "node",
+        "C:\\Users\\flour\\AppData\\Roaming\\npm\\node_modules\\@testmuai\\kane-cli\\bin\\kane-cli.cjs",
+        "testrun",
+        "run",
+        "--match",
+        "^flows[/\\\\]store[/\\\\]",
+        "--agent",
+        "--headless",
+        "--no-adaptive-heal"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "durationS": 471.2,
+      "credits": 0,
+      "steps": {
+        "total": 21,
+        "passed": 21,
+        "failed": 0,
+        "skipped": 0,
+        "replayed": 21,
+        "authored": 0
+      },
+      "members": [
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\cart_test.md",
+          "name": "cart_test.md",
+          "status": "passed",
+          "durationS": 19,
+          "sessionID": "d37cf3b6-9083-4f21-a627-53e595b5b2f5",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\d37cf3b6-9083-4f21-a627-53e595b5b2f5\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "cart_subtotal": "$84.00",
+            "cart_only_aurora_desk_lamp": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\catalog_test.md",
+          "name": "catalog_test.md",
+          "status": "passed",
+          "durationS": 30,
+          "sessionID": "36bdd766-1648-41ed-9c9d-cc0f6c50060b",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\36bdd766-1648-41ed-9c9d-cc0f6c50060b\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "detail_page_price_check": "$24.00",
+            "add_to_cart_button_visible": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\checkout_test.md",
+          "name": "checkout_test.md",
+          "status": "passed",
+          "durationS": 33,
+          "sessionID": "597599c5-0578-4d30-affa-28db2a9eca4c",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\597599c5-0578-4d30-affa-28db2a9eca4c\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "order_confirmed_visible": "true",
+            "thank_you_ada_lovelace_visible": "true",
+            "order_number_gl_prefix": "GL-"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\giftwrap_test.md",
+          "name": "giftwrap_test.md",
+          "status": "passed",
+          "durationS": 29,
+          "sessionID": "cee8d3ed-0ff2-4c9d-9091-7cbfe89e9fba",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\cee8d3ed-0ff2-4c9d-9091-7cbfe89e9fba\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "gift_wrap_included_visible": "true",
+            "total_paid_22_49_visible": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\promo_test.md",
+          "name": "promo_test.md",
+          "status": "passed",
+          "durationS": 56,
+          "sessionID": "e6c458d1-0b42-4b1a-be1a-ce52d1b7d0ab",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\e6c458d1-0b42-4b1a-be1a-ce52d1b7d0ab\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "confirmation_total_paid_check": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\shipping_test.md",
+          "name": "shipping_test.md",
+          "status": "passed",
+          "durationS": 57,
+          "sessionID": "88a7b785-e79c-49d9-8086-c041d36d2ec5",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\88a7b785-e79c-49d9-8086-c041d36d2ec5\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "confirmation_total_paid_visible": "true"
+          }
+        }
+      ],
+      "evidence": [
+        "C:\\Users\\flour\\Desktop\\greenlight\\.testmuai\\evidence\\238b4a03-f533-4c16-8ddd-bd6227e1c5cc.evidence",
+        "C:\\Users\\flour\\.testmuai\\evidence\\238b4a03-f533-4c16-8ddd-bd6227e1c5cc.evidence"
+      ],
+      "summary": "All checks passed.",
+      "startedAt": "2026-11-10T18:39:47.910Z",
+      "endedAt": "2026-11-10T18:47:39.172Z",
+      "stream": ".greenlight/runs/2026-11-10T18-47-39Z-59APNK7Y-a1.ndjson"
+    }
+  ],
+  "totals": {
+    "credits": 0,
+    "durationS": 471.2,
+    "authored": 0,
+    "replayed": 21,
+    "passed": 21,
+    "failed": 0
+  },
+  "integrity": {
+    "ok": true,
+    "checked": 17,
+    "changed": []
+  },
+  "target": {
+    "url": "http://localhost:5173",
+    "reachable": true,
+    "startedByPlugin": false
+  },
+  "notes": [],
+  "endedAt": "2026-11-10T18:47:39.177Z"
+}

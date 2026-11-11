@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# Greenlight data lives in .greenlight/. Only receipts are committed.
+.greenlight/*
+!.greenlight/receipts/
+!.greenlight/receipts/**
+
+# Kane CLI local artifacts (evidence packs, sessions, variables)
+.testmuai/
+
+# Build output
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+
+# Logs
+*.log

@@ -1,0 +1,55 @@
+name: ratchet
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  unit:
+    name: plugin unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+
+  kane:
+    name: Kane ratchet (replay only)
+    runs-on: ubuntu-latest
+    env:
+      LT_USERNAME: ${{ secrets.LT_USERNAME }}
+      LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - name: Install the store
+        run: pnpm --dir apps/store install
+      - name: Start the store
+        run: |
+          pnpm --dir apps/store dev > /tmp/store.log 2>&1 &
+          for i in $(seq 1 60); do
+            if curl -fsS http://localhost:5173 > /dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/store.log
+          exit 1
+      - name: Install Kane CLI
+        run: npm install -g @testmuai/kane-cli
+      - name: Replay the committed flows
+        run: |
+          if [ -z "$LT_USERNAME" ] || [ -z "$LT_ACCESS_KEY" ]; then
+            echo "No Kane credentials in this repo; unit tests are the gate."
+            exit 0
+          fi
+          export KANE_CLI_USER_AGENT=greenlight
+          kane-cli testrun run \
+            --match '^flows[/\\]store[/\\]' \
+            --agent --headless --no-adaptive-heal \
+            --username "$LT_USERNAME" --access-key "$LT_ACCESS_KEY"

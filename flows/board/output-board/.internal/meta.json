@@ -1,0 +1,34 @@
+{
+  "commit_id": "6029a36e-06e9-4a9c-aabb-a5cec62d4bd6",
+  "test_id": "691a5002-f4ce-42bd-a045-738bbfebea1a",
+  "testcase_id": "01M72T7P63D93GP9MC4YACSN6W",
+  "project_id": "01M6SGWNTGZVV2JZGGE49CCE8H",
+  "folder_id": "01M6SGWQ70QS8KF6V2G1RGCKT4",
+  "org_id": "3421188",
+  "session_name": "board",
+  "executions": [
+    {
+      "execution_id": "64e4da02-efa1-4e03-9611-6d62b9fef527",
+      "run_kind": "author",
+      "status": "passed",
+      "valid": true,
+      "at": "2026-11-10T13:42:10.861Z"
+    },
+    {
+      "execution_id": "6a0202c5-17e6-49b2-861a-c03023f70daa",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-11-10T13:49:38.014Z"
+    },
+    {
+      "execution_id": "3e4b3442-415c-4397-8b7d-bfaf7c5bebff",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-11-10T18:54:35.642Z"
+    }
+  ]
+}

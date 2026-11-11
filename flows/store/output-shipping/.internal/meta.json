@@ -1,0 +1,26 @@
+{
+  "test_id": "d7d70391-0443-4116-ba45-65da0f5db809",
+  "project_id": "01M6SGWNTGZVV2JZGGE49CCE8H",
+  "folder_id": "01M6SGWQ70QS8KF6V2G1RGCKT4",
+  "org_id": "3421188",
+  "session_name": "shipping",
+  "commit_id": "125bb51e-926f-4840-9ac5-101824335fb0",
+  "testcase_id": "01M73ACH3J3FA2TDXGF18RF04F",
+  "executions": [
+    {
+      "execution_id": "248e4f67-78a3-4ed0-85ca-d35e09f79bf8",
+      "run_kind": "author",
+      "status": "passed",
+      "valid": true,
+      "at": "2026-11-10T18:15:35.340Z"
+    },
+    {
+      "execution_id": "238b4a03-f533-4c16-8ddd-bd6227e1c5cc",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-11-10T18:47:36.669Z"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "app": {
+    "startUrl": "http://localhost:5173",
+    "devCommand": "pnpm --dir apps/store dev",
+    "editGlobs": ["apps/store/src/**", "apps/store/index.html", "apps/board/src/**"],
+    "devServer": {
+      "autoStart": true,
+      "timeoutMs": 90000
+    }
+  },
+  "flows": {
+    "match": "^flows[/\\\\]store[/\\\\]",
+    "timeoutMs": 900000
+  },
+  "loop": {
+    "auto": true,
+    "maxIterations": 3,
+    "maxCreditsPerLoop": 80,
+    "maxCreditsPerSession": 200
+  },
+  "integrity": {
+    "protect": [
+      "flows/**/*_test.md",
+      "greenlight.config.json",
+      "package.json",
+      "apps/store/package.json",
+      ".opencode/plugins/**/*.ts"
+    ],
+    "allowFlowEdits": false
+  },
+  "receiptsDir": ".greenlight/receipts"
+}

@@ -1,0 +1,128 @@
+{
+  "v": 1,
+  "loopID": "gl-mwap6m6w-APNK7Y",
+  "sessionID": "ses_e4d119e85ffdWRsvA2MUAPNK7Y",
+  "objective": "Phase 2 green: promo discount is carried into the confirmation total. Full suite replay.",
+  "trigger": {
+    "kind": "tool",
+    "files": [],
+    "reason": "Phase 2 green: promo discount is carried into the confirmation total. Full suite replay."
+  },
+  "startedAt": "2026-11-10T13:00:05.720Z",
+  "outcome": "green",
+  "attempts": [
+    {
+      "n": 1,
+      "kind": "suite",
+      "command": [
+        "node",
+        "C:\\Users\\flour\\AppData\\Roaming\\npm\\node_modules\\@testmuai\\kane-cli\\bin\\kane-cli.cjs",
+        "testrun",
+        "run",
+        "--match",
+        "^flows[/\\\\]store[/\\\\]",
+        "--agent",
+        "--headless",
+        "--no-adaptive-heal"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "durationS": 279.7,
+      "credits": 0,
+      "steps": {
+        "total": 14,
+        "passed": 14,
+        "failed": 0,
+        "skipped": 0,
+        "replayed": 14,
+        "authored": 0
+      },
+      "members": [
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\cart_test.md",
+          "name": "cart_test.md",
+          "status": "passed",
+          "durationS": 32,
+          "sessionID": "05db4748-6849-4e27-91cd-9c5e23cf296e",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\05db4748-6849-4e27-91cd-9c5e23cf296e\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "cart_subtotal": "$84.00",
+            "cart_only_aurora_desk_lamp": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\catalog_test.md",
+          "name": "catalog_test.md",
+          "status": "passed",
+          "durationS": 37,
+          "sessionID": "1e66c8fe-3063-4e42-8412-4807cfaf8648",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\1e66c8fe-3063-4e42-8412-4807cfaf8648\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "detail_page_price_check": "$24.00",
+            "add_to_cart_button_visible": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\checkout_test.md",
+          "name": "checkout_test.md",
+          "status": "passed",
+          "durationS": 46,
+          "sessionID": "2561176e-de83-4a5b-96a9-a64b9544bddd",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\2561176e-de83-4a5b-96a9-a64b9544bddd\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "order_confirmed_message": "true",
+            "order_number_gl_prefix": "GL-",
+            "thank_you_ada_lovelace_message": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\promo_test.md",
+          "name": "promo_test.md",
+          "status": "passed",
+          "durationS": 91,
+          "sessionID": "e96f0890-c84f-4b8f-83ab-a20ecb7d067e",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\e96f0890-c84f-4b8f-83ab-a20ecb7d067e\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "confirmation_page_total_paid": "true"
+          }
+        }
+      ],
+      "evidence": [
+        "C:\\Users\\flour\\Desktop\\greenlight\\.testmuai\\evidence\\ffbc6251-5912-413e-90de-c2b9f105ea3e.evidence",
+        "C:\\Users\\flour\\.testmuai\\evidence\\ffbc6251-5912-413e-90de-c2b9f105ea3e.evidence"
+      ],
+      "summary": "All checks passed.",
+      "startedAt": "2026-11-10T13:00:05.857Z",
+      "endedAt": "2026-11-10T13:04:45.535Z",
+      "stream": ".greenlight/runs/2026-11-10T13-04-45Z-6wAPNK7Y-a1.ndjson"
+    }
+  ],
+  "totals": {
+    "credits": 0,
+    "durationS": 279.7,
+    "authored": 0,
+    "replayed": 14,
+    "passed": 14,
+    "failed": 0
+  },
+  "integrity": {
+    "ok": true,
+    "checked": 14,
+    "changed": []
+  },
+  "target": {
+    "url": "http://localhost:5173",
+    "reachable": true,
+    "startedByPlugin": false
+  },
+  "notes": [],
+  "endedAt": "2026-11-10T13:04:45.538Z"
+}

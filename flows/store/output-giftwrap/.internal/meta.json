@@ -1,0 +1,26 @@
+{
+  "commit_id": "977dce19-ef49-4373-878c-ba70d52e96a7",
+  "test_id": "4e80e853-04d1-4190-aaaa-7b4fc986b244",
+  "testcase_id": "01M73AW3TH4DB7W30DKP44EK8N",
+  "project_id": "01M6SGWNTGZVV2JZGGE49CCE8H",
+  "folder_id": "01M6SGWQ70QS8KF6V2G1RGCKT4",
+  "org_id": "3421188",
+  "session_name": "giftwrap",
+  "executions": [
+    {
+      "execution_id": "86ccffd2-ff55-4179-a9f5-bbce6c148465",
+      "run_kind": "author",
+      "status": "passed",
+      "valid": true,
+      "at": "2026-11-10T18:38:50.317Z"
+    },
+    {
+      "execution_id": "238b4a03-f533-4c16-8ddd-bd6227e1c5cc",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-11-10T18:47:36.662Z"
+    }
+  ]
+}

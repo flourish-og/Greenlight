@@ -1,0 +1,134 @@
+{
+  "v": 1,
+  "loopID": "gl-mw5ufh1p-APNK7Y",
+  "sessionID": "ses_e4d119e85ffdWRsvA2MUAPNK7Y",
+  "objective": "Phase 2 demo retry: promo discount now reaches the confirmation total; catalog was a replay flake and passed standalone.",
+  "trigger": {
+    "kind": "tool",
+    "files": [],
+    "reason": "Phase 2 demo retry: promo discount now reaches the confirmation total; catalog was a replay flake and passed standalone."
+  },
+  "startedAt": "2026-11-07T03:39:58.033Z",
+  "outcome": "red",
+  "attempts": [
+    {
+      "n": 2,
+      "kind": "suite",
+      "command": [
+        "node",
+        "C:\\Users\\flour\\AppData\\Roaming\\npm\\node_modules\\@testmuai\\kane-cli\\bin\\kane-cli.cjs",
+        "testrun",
+        "run",
+        "--match",
+        "^flows[/\\\\]store[/\\\\]",
+        "--agent",
+        "--headless",
+        "--no-adaptive-heal"
+      ],
+      "exitCode": 1,
+      "status": "failed",
+      "durationS": 378.1,
+      "credits": 0,
+      "steps": {
+        "total": 14,
+        "passed": 12,
+        "failed": 1,
+        "skipped": 1,
+        "replayed": 14,
+        "authored": 0
+      },
+      "members": [
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\cart_test.md",
+          "name": "cart_test.md",
+          "status": "passed",
+          "durationS": 18,
+          "sessionID": "f29a110f-7d68-4e61-9df1-77d5cc3fbd0c",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\f29a110f-7d68-4e61-9df1-77d5cc3fbd0c\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "cart_subtotal": "$84.00",
+            "cart_only_aurora_desk_lamp": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\catalog_test.md",
+          "name": "catalog_test.md",
+          "status": "passed",
+          "durationS": 43,
+          "sessionID": "60862253-aa1e-4aac-a5b2-386d3d6c6db2",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\60862253-aa1e-4aac-a5b2-386d3d6c6db2\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "detail_page_price_check": "$24.00",
+            "add_to_cart_button_visible": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\checkout_test.md",
+          "name": "checkout_test.md",
+          "status": "passed",
+          "durationS": 48,
+          "sessionID": "5f2c187d-ab70-454e-bed3-e46b396c88a0",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\5f2c187d-ab70-454e-bed3-e46b396c88a0\\events.ndjson",
+          "authored": false,
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "order_confirmed_message": "true",
+            "order_number_gl_prefix": "GL-",
+            "thank_you_ada_lovelace_message": "true"
+          }
+        },
+        {
+          "path": "C:\\Users\\flour\\Desktop\\greenlight\\flows\\store\\promo_test.md",
+          "name": "promo_test.md",
+          "status": "failed",
+          "durationS": 78,
+          "sessionID": "04c00ff2-fe32-4f7c-a005-6d8e6836207e",
+          "logPath": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\04c00ff2-fe32-4f7c-a005-6d8e6836207e\\events.ndjson",
+          "authored": false,
+          "failure": {
+            "message": "analyzer_failed: @ step 5",
+            "stepIndex": 2
+          },
+          "failedStep": 2,
+          "screenshot": "C:\\Users\\flour\\.testmuai\\kaneai\\sessions\\04c00ff2-fe32-4f7c-a005-6d8e6836207e\\scratch\\1\\replay-test\\screenshots/step_005.png",
+          "finalUrl": "http://localhost:5173/",
+          "observed": {
+            "promo_code_applied_message_visible": "true"
+          }
+        }
+      ],
+      "evidence": [
+        "C:\\Users\\flour\\Desktop\\greenlight\\.testmuai\\evidence\\a17e42e3-058a-4e6c-acb6-983d3a628580.evidence",
+        "C:\\Users\\flour\\.testmuai\\evidence\\a17e42e3-058a-4e6c-acb6-983d3a628580.evidence"
+      ],
+      "summary": "",
+      "startedAt": "2026-11-07T03:39:58.078Z",
+      "endedAt": "2026-11-07T03:46:16.178Z",
+      "stream": ".greenlight/runs/2026-11-07T03-46-16Z-1pAPNK7Y-a2.ndjson"
+    }
+  ],
+  "totals": {
+    "credits": 0,
+    "durationS": 378.1,
+    "authored": 0,
+    "replayed": 14,
+    "passed": 12,
+    "failed": 1
+  },
+  "integrity": {
+    "ok": true,
+    "checked": 14,
+    "changed": []
+  },
+  "target": {
+    "url": "http://localhost:5173",
+    "reachable": true,
+    "startedByPlugin": false
+  },
+  "notes": [],
+  "endedAt": "2026-11-07T03:46:16.180Z"
+}

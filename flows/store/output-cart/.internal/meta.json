@@ -1,0 +1,81 @@
+{
+  "commit_id": "da1a683b-8291-4c13-bfe9-1967909b5a95",
+  "test_id": "e24deed0-f45e-437b-8542-79dab0284d1a",
+  "testcase_id": "01M6SJ49FT25JY2QX8E2HN1P30",
+  "project_id": "01M6SGWNTGZVV2JZGGE49CCE8H",
+  "folder_id": "01M6SGWQ70QS8KF6V2G1RGCKT4",
+  "org_id": "3421188",
+  "session_name": "cart",
+  "executions": [
+    {
+      "execution_id": "4a2d883f-60ef-4858-b828-acad441cc07c",
+      "run_kind": "author",
+      "status": "passed",
+      "valid": true,
+      "at": "2026-11-06T23:33:21.097Z"
+    },
+    {
+      "execution_id": "f304dda6-cd21-4eb5-a21c-344c0df82575",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-11-06T23:39:01.945Z"
+    },
+    {
+      "execution_id": "92fa5988-1921-4edf-b52b-a8748bd81968",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-11-06T23:40:55.651Z"
+    },
+    {
+      "execution_id": "9b29d7db-fd64-442e-947f-93b7b82eb7e4",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": false,
+      "at": "2026-11-07T00:10:10.852Z"
+    },
+    {
+      "execution_id": "e1133c75-9167-41da-a121-088e0cbdb827",
+      "run_kind": "replay",
+      "status": "passed",
+      "at": "2026-11-07T00:14:20.616Z",
+      "uploaded": true
+    },
+    {
+      "execution_id": "634ca733-644a-496b-ac78-e149359d49ed",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-11-07T03:37:06.085Z"
+    },
+    {
+      "execution_id": "a17e42e3-058a-4e6c-acb6-983d3a628580",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": false,
+      "at": "2026-11-07T03:45:48.628Z"
+    },
+    {
+      "execution_id": "ffbc6251-5912-413e-90de-c2b9f105ea3e",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-11-10T13:04:43.008Z"
+    },
+    {
+      "execution_id": "238b4a03-f533-4c16-8ddd-bd6227e1c5cc",
+      "run_kind": "replay",
+      "status": "passed",
+      "valid": true,
+      "uploaded": true,
+      "at": "2026-11-10T18:47:36.647Z"
+    }
+  ]
+}

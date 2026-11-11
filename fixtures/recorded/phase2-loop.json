@@ -1,0 +1,215 @@
+{
+  "v": 1,
+  "kind": "recorded",
+  "label": "Phase 2: promo codes, from a real red to a real green",
+  "recordedAt": "2026-11-10",
+  "provenance": [
+    "tests/fixtures/kane/phase2-testrun-2026-11-07.ndjson (sha256 4667ecff0a12843d)",
+    "tests/fixtures/kane/phase2-member-promo-2026-11-07.ndjson (sha256 9ac1fefc715b8032)",
+    "tests/fixtures/kane/phase2-member-cart-2026-11-07.ndjson (sha256 428894dbc4a20a46)",
+    "tests/fixtures/kane/phase2-member-catalog-2026-11-07.ndjson (sha256 a32cd1c58883e8c4)",
+    "tests/fixtures/kane/phase2-member-checkout-2026-11-07.ndjson (sha256 76e65810460a9698)",
+    ".greenlight/receipts/2026-11-07T00-07-52Z-hqAPNK7Y.json (sha256 0d07abfc82ca2a34)",
+    "tests/fixtures/kane/phase2-green-suite-2026-11-10.ndjson (sha256 ce00d83880d6795e)",
+    ".greenlight/receipts/2026-11-10T13-00-05Z-6wAPNK7Y.json (sha256 f35c67fe0af795ae)"
+  ],
+  "entries": [
+    {
+      "at": "2026-11-07T00:07:52.328Z",
+      "run": "red",
+      "type": "start",
+      "title": "Loop started: promo codes were just implemented",
+      "detail": "Phase 2 demo: promo codes were just implemented; Kane decides whether they actually reach the paid total."
+    },
+    {
+      "at": "2026-11-07T00:07:53.657Z",
+      "run": "red",
+      "type": "plan",
+      "title": "Plan resolved: 4 flows (1 has no recording yet)",
+      "detail": "cart_test.md, catalog_test.md, checkout_test.md, promo_test.md"
+    },
+    {
+      "at": "2026-11-07T00:07:55.031Z",
+      "run": "red",
+      "type": "start",
+      "title": "Replaying 3 recorded flows",
+      "detail": "flows\\store\\cart_test.md, flows\\store\\catalog_test.md, flows\\store\\checkout_test.md"
+    },
+    {
+      "at": "2026-11-07T00:08:17.997Z",
+      "run": "red",
+      "type": "member",
+      "title": "cart_test.md passed in 19s"
+    },
+    {
+      "at": "2026-11-07T00:09:07.693Z",
+      "run": "red",
+      "type": "member",
+      "title": "catalog_test.md passed in 33s"
+    },
+    {
+      "at": "2026-11-07T00:10:09.882Z",
+      "run": "red",
+      "type": "member",
+      "title": "checkout_test.md passed in 42s"
+    },
+    {
+      "at": "2026-11-07T00:10:10.863Z",
+      "run": "red",
+      "type": "authored",
+      "title": "No recording for promo_test.md - authoring 3 steps",
+      "detail": "The agent has to write the flow against the real app."
+    },
+    {
+      "at": "2026-11-07T00:11:35.062Z",
+      "run": "red",
+      "type": "step",
+      "title": "Step 1: Reject an unknown promo code - passed",
+      "detail": "68.7s"
+    },
+    {
+      "at": "2026-11-07T00:12:25.475Z",
+      "run": "red",
+      "type": "step",
+      "title": "Step 2: Apply a real promo code - passed",
+      "detail": "49.7s"
+    },
+    {
+      "at": "2026-11-07T00:14:01.865Z",
+      "run": "red",
+      "type": "verdict",
+      "title": "Verdict: Confirmation total omits applied promo discount",
+      "detail": "The order confirmation charged $42.00 even though the checkout total was $37.80.",
+      "data": {
+        "verdict": {
+          "family": "application_issue",
+          "category": "ui_data_defect",
+          "severity": "major",
+          "bugTitle": "Confirmation total omits applied promo discount",
+          "rootCause": "The discount shown in the cart and checkout was not carried through to the final confirmation total.",
+          "oneLiner": "The order confirmation charged $42.00 even though the checkout total was $37.80.",
+          "suggestion": "Investigate the order-total calculation used after placing an order and ensure an applied promo discount is preserved on the confirmation page.",
+          "confidence": 0.98,
+          "culpritStep": "2-12"
+        },
+        "credits": 4.370449999999999
+      }
+    },
+    {
+      "at": "2026-11-07T00:14:01.866Z",
+      "run": "red",
+      "type": "step",
+      "title": "Step 3: Pay the discounted total - failed",
+      "detail": "95.7s - final verification failed"
+    },
+    {
+      "at": "2026-11-07T00:14:14.214Z",
+      "run": "red",
+      "type": "summary",
+      "title": "promo_test.md: 2 passed, 1 failed (3 authored)",
+      "detail": "227s - run_failed"
+    },
+    {
+      "at": "2026-11-07T00:14:20.638Z",
+      "run": "red",
+      "type": "evidence",
+      "title": "Evidence pack sealed",
+      "detail": "C:\\Users\\flour\\Desktop\\greenlight\\.testmuai\\evidence\\e1133c75-9167-41da-a121-088e0cbdb827.evidence"
+    },
+    {
+      "at": "2026-11-07T00:14:20.640Z",
+      "run": "red",
+      "type": "summary",
+      "title": "Suite: 13 passed, 1 failed of 14 steps - 71.32 credits",
+      "detail": "3 authored, 11 replayed. Totals summed from the four member logs."
+    },
+    {
+      "at": "2026-11-07T00:14:23.087Z",
+      "run": "red",
+      "type": "receipt",
+      "title": "Loop Receipt: RED",
+      "detail": "Money bug confirmed. The agent gets the Failure Brief and fixes the app.",
+      "data": {
+        "receipt": {
+          "loopID": "gl-mw5n8ehq-APNK7Y",
+          "outcome": "red",
+          "totals": {
+            "total": 14,
+            "passed": 13,
+            "failed": 1,
+            "skipped": 0,
+            "authored": 3,
+            "replayed": 11,
+            "credits": 71.32
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-10T13:00:05.720Z",
+      "run": "green",
+      "type": "start",
+      "title": "Fix landed: placeOrder now stores the discounted total",
+      "detail": "Phase 2 green: promo discount is carried into the confirmation total. Full suite replay."
+    },
+    {
+      "at": "2026-11-10T13:00:50.977Z",
+      "run": "green",
+      "type": "member",
+      "title": "cart_test.md passed in 32s"
+    },
+    {
+      "at": "2026-11-10T13:01:32.952Z",
+      "run": "green",
+      "type": "member",
+      "title": "catalog_test.md passed in 37s"
+    },
+    {
+      "at": "2026-11-10T13:02:25.863Z",
+      "run": "green",
+      "type": "member",
+      "title": "checkout_test.md passed in 46s"
+    },
+    {
+      "at": "2026-11-10T13:04:02.219Z",
+      "run": "green",
+      "type": "member",
+      "title": "promo_test.md passed in 91s"
+    },
+    {
+      "at": "2026-11-10T13:04:43.007Z",
+      "run": "green",
+      "type": "evidence",
+      "title": "Evidence pack sealed",
+      "detail": "C:\\Users\\flour\\Desktop\\greenlight\\.testmuai\\evidence\\ffbc6251-5912-413e-90de-c2b9f105ea3e.evidence"
+    },
+    {
+      "at": "2026-11-10T13:04:43.036Z",
+      "run": "green",
+      "type": "summary",
+      "title": "Suite: 4 passed of 4 flows - 0 credits - 269s",
+      "detail": "Every step replayed. No LLM authored anything, so the suite cost nothing."
+    },
+    {
+      "at": "2026-11-10T13:04:45.538Z",
+      "run": "green",
+      "type": "receipt",
+      "title": "Loop Receipt: GREEN",
+      "detail": "14/14 steps replayed, 0 credits.",
+      "data": {
+        "receipt": {
+          "loopID": "gl-mwap6m6w-APNK7Y",
+          "outcome": "green",
+          "totals": {
+            "credits": 0,
+            "durationS": 279.7,
+            "authored": 0,
+            "replayed": 14,
+            "passed": 14,
+            "failed": 0
+          }
+        }
+      }
+    }
+  ]
+}
